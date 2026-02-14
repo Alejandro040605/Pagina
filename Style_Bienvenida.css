@@ -123,4 +123,16 @@ h1
 .link {
     text-decoration: none;
     color: white;
+
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
 }
