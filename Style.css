@@ -60,5 +60,25 @@ input {
 /*-------------------pagina 2------------------------*/
 
 
+@media (max-width: 480px) {
+
+    .form-login {
+        padding: 20px;
+    }
+
+    .form-login h5 {
+        font-size: 18px;
+    }
+
+    .Controls {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .buttons {
+        height: 38px;
+        font-size: 14px;
+    }
+}
 
 
