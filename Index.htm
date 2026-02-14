@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title> ¡Alto identificación! </title>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+
+    <section class="form-login">
+
+        <h5>Mi persona especial :3</h5>
+
+        <form onsubmit="return validarLogin()">
+
+            <input class="Controls" type="text" id="usuario" placeholder="Nombre">
+            <input class="Controls" type="password" id="contrasena" placeholder="Contraseña">
+            <input class="buttons" type="submit" value="Ingresar">
+
+        </form>
+
+        <p id="error" style="color: pink; text-align:center;"></p>
+
+    </section>
+
+    <script>
+        function validarLogin() {
+
+            var user = document.getElementById("usuario").value;
+            var pass = document.getElementById("contrasena").value;
+
+            if (user === "Stephany" && pass === "Dospapasalbinas") {
+                window.location.href = "bienvenida.html";
+                return false;
+            } else {
+                document.getElementById("error").innerText = "Nombre o contraseña incorrectos 💔";
+                return false;
+            }
+        }
+    </script>
+
+</body>
+</html>
